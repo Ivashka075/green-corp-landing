@@ -146,13 +146,14 @@ button {
     border: none;
   }
 
+  select {
+    appearance: none;
+  }
+
   .form__submit {
     font-size: 18px;
     font-weight: 600;
     margin-top: 40px;
-  }
-  select {
-    appearance: none;
   }
 
   input {
@@ -200,4 +201,17 @@ button {
   .footer__links a {
     margin-bottom: 15px;
     font-weight: 700;
+  }
+
+  @keyframes rotation {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+  .rotation {
+    animation: 10s linear infinite;
   }
