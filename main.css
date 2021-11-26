@@ -45,6 +45,7 @@ button {
   .about__sun-image {
     width: 100px;
     height: 100px;
+    animation: rotation 10s linear infinite; 
   }
 
   .about {
@@ -210,8 +211,4 @@ button {
     to {
         transform:rotate(360deg);
     }
-}
-
-  .rotation {
-    animation: 10s linear infinite;
   }
