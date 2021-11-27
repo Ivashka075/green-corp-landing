@@ -3,7 +3,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-}
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 1;
+  }
 
 body {
     font-family: "Raleway", sans-serif;
