@@ -42,7 +42,7 @@ button {
     padding: 15px;
 }
 
-.about__image {
+  .about__image {
     width: 500px;
   }
    
@@ -54,6 +54,7 @@ button {
   }
 
   .about {
+    animation: opacition 2s;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -83,7 +84,7 @@ button {
   }
 
   .about__info {
-      width: 550px;
+    width: 550px;
   }
 
   .form__container {
@@ -217,3 +218,113 @@ button {
         transform: rotate(360deg);
     }
   }
+
+  @media (min-width: 320px) and (max-width: 719px) {
+
+    .header__logo {
+      height: 20px;
+    }
+    .about {
+      padding: 50px 10px;
+      flex-direction: column;
+    }
+    .form {
+      padding: 50px 10px;
+    }
+    .about__info h1 {
+      font-size: 36px;
+      line-height: 40px;
+    }
+    .form__container h1 {
+      font-size: 36px;
+      line-height: 40px;
+    }
+    .about__image {
+      width: 280px;
+    }
+    .about__sun-image {
+      width: 75px;
+      height: 75px;
+    }
+    .footer__container {
+      flex-direction: column;
+    }
+    .about__images {
+      order: 1;
+    }
+    .about__info {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 95vw;
+    }
+    .footer__group {
+      margin: 0;
+    }
+    footer {
+      margin: 0;
+    }
+  }
+  
+  @media (min-width: 720px) and (max-width: 1024px) {
+
+    .header__logo {
+      height: 20px;
+    }
+    .about {
+      padding: 50px 10px;
+      flex-direction: column;
+    }
+    .form {
+      padding: 50px 10px;
+    }
+    .about__info h1 {
+      font-size: 36px;
+      line-height: 40px;
+    }
+    .form__container h1 {
+      font-size: 36px;
+      line-height: 40px;
+    }
+    .about__image {
+      width: 280px;
+    }
+    .about__sun-image {
+      width: 75px;
+      height: 75px;
+    }
+    .footer__container {
+      flex-direction: column;
+    }
+    .about__images {
+      order: 1;
+    }
+    .about__info {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 95vw;
+    }
+    .footer__group {
+      margin: 0;
+    }
+    footer {
+      margin: 0;
+    }
+  }
+
+    @keyframes opacition {
+      from {
+        opacity: 0;
+    }
+      to {
+        opacity: 1;
+    }
+    }
+
+    .animate__bounceInLeft, .animate__bounceInRight {
+      --animate-duration: 2s;
+    }
+  
