@@ -87,6 +87,137 @@ button {
     width: 550px;
   }
 
+  
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding: 35px 40px 25px 40px;
+    margin: 0 25px;
+    border: 1px solid #D9E4E6;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.8;
+  }
+
+  .card__logo {
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: #eaeff9;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;  
+  }
+  #cl-1 {
+    color: #ffb406;
+  }
+  #cl-2 {
+    color: #ad1714;
+  }
+  #cl-3 {
+    color: #22a030;
+  }
+  .features__border {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-top: 1px solid #E6EAF4;
+  }
+
+  .features__feedback {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .features__feedback-right {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .features__feedback-right h3 {
+    margin-top: none;
+    margin-bottom: 20px;
+    font-size: 48px;
+  }
+
+
+  .features__feedback-left {
+    margin-right: 10px;
+  }
+  .features__feedback-left h2 {
+    font-size: 48px;
+  }
+  .features__feedback-left p {
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.7;
+  }
+  .features__box {
+    padding: 30px 40px 25px 40px;
+    border-radius: 25px;
+    color: white;
+  }
+  .features__savings-box {
+    background-color: #dc5e26;
+    box-shadow: 0px 6px 0px rgb(221 95 38 / 20%);
+    margin-right: 30px;
+  }
+  .features__rate-box {
+    background-color: #1D263A;
+    box-shadow: 0px 6px 0px rgb(29 38 58 / 20%)
+  }
+  .features__rate-box span {
+    color: #ff7039;
+  }
+
+  .promo {
+    display: flex;
+    justify-content: space-between;
+  } 
+
+  .promo__image {
+    width: 50%;
+    background-image: url("img/promo.jpg");
+    background-size: cover;
+    display: flex;
+    flex-shrink: 0;
+  }
+  .promo__right {
+    background-color: #dd5f26;
+    padding: 160px 60px;
+  }
+  .promo__right-card {
+    background-color: white;
+    padding: 30px 40px;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+    border-radius: 25px;
+  }
+  .promo__right-card p {
+    opacity: 0.8;
+  }
+  .circle-orange {
+    color: #ec6b29;
+    width: 10px;
+    margin-right: 10px;
+  }
+  .button-promo {
+    background-color: #107b1c;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 15px 30px;
+    font-weight: 600;
+  }
+  .button-promo-icon {
+    font-size: 15px;
+    margin-left: 5px;
+  }
+
   .form__container {
     width: 550px;
   }
@@ -259,12 +390,60 @@ button {
       align-items: flex-start;
       width: 95vw;
     }
+
+    .features__feedback {
+      display: flex;
+      flex-direction: column;
+      margin: -30px;
+    }
+
+    .features__feedback-right {
+      display: flex;
+      flex-direction: column;
+      font-size: 36px;
+    }
+
+    .features__feedback-left h2 {
+      font-size: 36px;
+    }
+    .features__savings-box {
+      background-color: #dc5e26;
+      box-shadow: 0px 6px 0px rgb(221 95 38 / 20%);
+      margin-right: 0px;
+      margin-bottom: 30px;
+    }
+
+    .promo {
+      display: flex;
+      flex-direction: column;
+    } 
+    .promo__right {
+      order: 1;
+      padding: 50px 10px;
+    }
+    .promo__image {
+      order: 2;
+      height: 500px;
+      width: 100%;
+      flex-shrink: 0;
+    }
     .footer__group {
       margin: 0;
     }
     footer {
       margin: 0;
     }
+
+    .cards {
+      margin: -60px;
+      display: grid;
+      grid-template-columns: auto;
+    } 
+    .card{  
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
   }
   
   @media (min-width: 720px) and (max-width: 1024px) {
@@ -327,4 +506,8 @@ button {
     .animate__bounceInLeft, .animate__bounceInRight {
       --animate-duration: 2s;
     }
-  
+   
+    .features {
+      background-color: white;
+      padding: 115px 60px;
+    }
